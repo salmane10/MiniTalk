@@ -1,0 +1,2 @@
+NAME = 
+CC = cc
