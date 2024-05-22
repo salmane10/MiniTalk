@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slouham <slouham@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/08 13:22:12 by slouham           #+#    #+#             */
-/*   Updated: 2024/05/22 11:03:43 by slouham          ###   ########.fr       */
+/*   Created: 2024/05/10 11:34:28 by slouham           #+#    #+#             */
+/*   Updated: 2024/05/22 11:03:29 by slouham          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 void	bit_sender(int pid, char byte)
 {
@@ -29,7 +29,7 @@ void	bit_sender(int pid, char byte)
 		if (sig == -1)
 		{
 			ft_putstr("FAILED SENDING SIGNAL TO THE SERVER\n");
-			exit(1);
+			_exit(1);
 		}
 		cmp = cmp >> 1;
 		c++;
